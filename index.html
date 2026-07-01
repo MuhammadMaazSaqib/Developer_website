@@ -167,6 +167,11 @@
     .btn:hover { transform: translateY(-2px); opacity: 0.92; }
 
     .btn-primary {
+      background: var(--navy);
+      color: var(--white);
+    }
+    
+    .btn-primary-hero {
       background: var(--white);
       color: var(--navy);
     }
@@ -298,15 +303,16 @@
       margin-bottom: 4px;
     }
 
+    /* Updated to successful green color for live status */
     .app-status {
       display: inline-block;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: #B45309;
-      background: #FEF3C7;
-      border: 1px solid #FDE68A;
+      color: #065F46;
+      background: #D1FAE5;
+      border: 1px solid #A7F3D0;
       padding: 3px 10px;
       border-radius: 999px;
       margin-bottom: 12px;
@@ -323,6 +329,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      margin-bottom: 20px;
     }
 
     .tag {
@@ -508,7 +515,7 @@
     and productivity is what we deliver to the people who use our tools every day.
   </p>
   <div class="hero-links" style="margin-top:40px;">
-    <a href="#apps" class="btn btn-primary">View Our Apps</a>
+    <a href="#apps" class="btn btn-primary-hero">View Our Apps</a>
     <a href="#contact" class="btn btn-outline">Get in Touch</a>
   </div>
 </section>
@@ -581,7 +588,8 @@
     </div>
     <div class="app-info">
       <h3>Tick Notes</h3>
-      <span class="app-status">Closed Testing · Coming Soon</span>
+      <!-- Updated Status Badge -->
+      <span class="app-status">Live on Google Play</span>
       <p>
         A focused productivity app combining color-tagged notes, a smart task
         manager with reminders, a Pomodoro focus timer, and 30-day analytics.
@@ -595,6 +603,16 @@
         <span class="tag">Offline First</span>
         <span class="tag">Android</span>
         <span class="tag">Linux</span>
+      </div>
+      <!-- New Download Button -->
+      <div>
+        <a href="https://play.google.com/store/apps/details?id=com.truvion.ticknotes" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
+            <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/>
+            <polygon points="12 15 17 21 7 21 12 15"/>
+          </svg>
+          Get it on Google Play
+        </a>
       </div>
     </div>
   </div>
